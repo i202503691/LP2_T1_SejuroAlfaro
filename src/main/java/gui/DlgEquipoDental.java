@@ -320,7 +320,8 @@ public class DlgEquipoDental extends JDialog implements ActionListener {
 		
 		
 		String nombre = txtNombre.getText();
-		String costo = txtCosto.getText();		
+		double costo = Double.parseDouble(txtCosto.getText());
+		Dentista dentista = (Dentista) cboDentistas.getSelectedItem();
 		String estado = (String) cboEstados.getSelectedItem();
 		String nombreCompleto = (String) cboDentistas.getSelectedItem();
 		
